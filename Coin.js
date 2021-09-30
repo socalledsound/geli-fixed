@@ -1,9 +1,9 @@
 class Coin {
-    constructor({x,y}, size){
+    constructor(objectsImg, {x,y}, size){
         this.x = x
         this.y = y
         this.size = size
-        this.images = []
+        this.images =  loadCoinImages(objectsImg)
         this.imageCounter = 0
     }
     
